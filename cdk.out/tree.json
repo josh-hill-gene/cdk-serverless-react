@@ -607,10 +607,203 @@
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.118.0"
                 }
+              },
+              "0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb": {
+                "id": "0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb",
+                "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.118.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.118.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.118.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.118.0"
+                }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
+              "version": "1.118.0"
+            }
+          },
+          "helloLambdaNodeJs": {
+            "id": "helloLambdaNodeJs",
+            "path": "Space-Finder/helloLambdaNodeJs",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "Space-Finder/helloLambdaNodeJs/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "Space-Finder/helloLambdaNodeJs/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.118.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.118.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "Space-Finder/helloLambdaNodeJs/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "Space-Finder/helloLambdaNodeJs/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.118.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "Space-Finder/helloLambdaNodeJs/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "Space-Finder/helloLambdaNodeJs/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.118.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.118.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.118.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "Space-Finder/helloLambdaNodeJs/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameters0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fbS3Bucket6153F6A5"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fbS3VersionKey3492BE6B"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fbS3VersionKey3492BE6B"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "helloLambdaNodeJsServiceRole17C143C3",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
+                      }
+                    },
+                    "handler": "index.handler",
+                    "runtime": "nodejs14.x"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.118.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
               "version": "1.118.0"
             }
           },
