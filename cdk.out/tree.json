@@ -143,7 +143,7 @@
                           "Ref": "SpaceApi1B373D2B"
                         },
                         "deploymentId": {
-                          "Ref": "SpaceApiDeploymentA2B9E7658bdf8d7afdc6e10a9c8f85abc9ae7b83"
+                          "Ref": "SpaceApiDeploymentA2B9E765c50c6640b3cd95ccfffd1d5a6b99099b"
                         },
                         "stageName": "prod"
                       }
@@ -211,7 +211,7 @@
                                 "action": "lambda:InvokeFunction",
                                 "functionName": {
                                   "Fn::GetAtt": [
-                                    "helloLambda79DCE371",
+                                    "helloLambdaNodeJs14E63891",
                                     "Arn"
                                   ]
                                 },
@@ -260,7 +260,7 @@
                                 "action": "lambda:InvokeFunction",
                                 "functionName": {
                                   "Fn::GetAtt": [
-                                    "helloLambda79DCE371",
+                                    "helloLambdaNodeJs14E63891",
                                     "Arn"
                                   ]
                                 },
@@ -327,7 +327,7 @@
                                         ":lambda:path/2015-03-31/functions/",
                                         {
                                           "Fn::GetAtt": [
-                                            "helloLambda79DCE371",
+                                            "helloLambdaNodeJs14E63891",
                                             "Arn"
                                           ]
                                         },
@@ -416,238 +416,6 @@
               "version": "1.118.0"
             }
           },
-          "helloLambda": {
-            "id": "helloLambda",
-            "path": "Space-Finder/helloLambda",
-            "children": {
-              "ServiceRole": {
-                "id": "ServiceRole",
-                "path": "Space-Finder/helloLambda/ServiceRole",
-                "children": {
-                  "Resource": {
-                    "id": "Resource",
-                    "path": "Space-Finder/helloLambda/ServiceRole/Resource",
-                    "attributes": {
-                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
-                      "aws:cdk:cloudformation:props": {
-                        "assumeRolePolicyDocument": {
-                          "Statement": [
-                            {
-                              "Action": "sts:AssumeRole",
-                              "Effect": "Allow",
-                              "Principal": {
-                                "Service": "lambda.amazonaws.com"
-                              }
-                            }
-                          ],
-                          "Version": "2012-10-17"
-                        },
-                        "managedPolicyArns": [
-                          {
-                            "Fn::Join": [
-                              "",
-                              [
-                                "arn:",
-                                {
-                                  "Ref": "AWS::Partition"
-                                },
-                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-                              ]
-                            ]
-                          }
-                        ]
-                      }
-                    },
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
-                    }
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
-                }
-              },
-              "Code": {
-                "id": "Code",
-                "path": "Space-Finder/helloLambda/Code",
-                "children": {
-                  "Stage": {
-                    "id": "Stage",
-                    "path": "Space-Finder/helloLambda/Code/Stage",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.118.0"
-                    }
-                  },
-                  "AssetBucket": {
-                    "id": "AssetBucket",
-                    "path": "Space-Finder/helloLambda/Code/AssetBucket",
-                    "children": {
-                      "Notifications": {
-                        "id": "Notifications",
-                        "path": "Space-Finder/helloLambda/Code/AssetBucket/Notifications",
-                        "constructInfo": {
-                          "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.118.0"
-                        }
-                      }
-                    },
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.118.0"
-                    }
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.118.0"
-                }
-              },
-              "Resource": {
-                "id": "Resource",
-                "path": "Space-Finder/helloLambda/Resource",
-                "attributes": {
-                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
-                  "aws:cdk:cloudformation:props": {
-                    "code": {
-                      "s3Bucket": {
-                        "Ref": "AssetParameters8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5S3BucketD6ABEC85"
-                      },
-                      "s3Key": {
-                        "Fn::Join": [
-                          "",
-                          [
-                            {
-                              "Fn::Select": [
-                                0,
-                                {
-                                  "Fn::Split": [
-                                    "||",
-                                    {
-                                      "Ref": "AssetParameters8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5S3VersionKeyF5BE0C22"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "Fn::Select": [
-                                1,
-                                {
-                                  "Fn::Split": [
-                                    "||",
-                                    {
-                                      "Ref": "AssetParameters8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5S3VersionKeyF5BE0C22"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        ]
-                      }
-                    },
-                    "role": {
-                      "Fn::GetAtt": [
-                        "helloLambdaServiceRoleBB046714",
-                        "Arn"
-                      ]
-                    },
-                    "handler": "hello.main",
-                    "runtime": "nodejs14.x"
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.118.0"
-                }
-              }
-            },
-            "constructInfo": {
-              "fqn": "@aws-cdk/aws-lambda.Function",
-              "version": "1.118.0"
-            }
-          },
-          "AssetParameters": {
-            "id": "AssetParameters",
-            "path": "Space-Finder/AssetParameters",
-            "children": {
-              "8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5": {
-                "id": "8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5",
-                "path": "Space-Finder/AssetParameters/8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5",
-                "children": {
-                  "S3Bucket": {
-                    "id": "S3Bucket",
-                    "path": "Space-Finder/AssetParameters/8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5/S3Bucket",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
-                    }
-                  },
-                  "S3VersionKey": {
-                    "id": "S3VersionKey",
-                    "path": "Space-Finder/AssetParameters/8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5/S3VersionKey",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
-                    }
-                  },
-                  "ArtifactHash": {
-                    "id": "ArtifactHash",
-                    "path": "Space-Finder/AssetParameters/8c4a30c1e4959799c786621414e2e0147596b3540b35d650afad7e8d2f27e1f5/ArtifactHash",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
-                    }
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
-                }
-              },
-              "0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb": {
-                "id": "0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb",
-                "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb",
-                "children": {
-                  "S3Bucket": {
-                    "id": "S3Bucket",
-                    "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb/S3Bucket",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
-                    }
-                  },
-                  "S3VersionKey": {
-                    "id": "S3VersionKey",
-                    "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb/S3VersionKey",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
-                    }
-                  },
-                  "ArtifactHash": {
-                    "id": "ArtifactHash",
-                    "path": "Space-Finder/AssetParameters/0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fb/ArtifactHash",
-                    "constructInfo": {
-                      "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
-                    }
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
-                }
-              }
-            },
-            "constructInfo": {
-              "fqn": "@aws-cdk/core.Construct",
-              "version": "1.118.0"
-            }
-          },
           "helloLambdaNodeJs": {
             "id": "helloLambdaNodeJs",
             "path": "Space-Finder/helloLambdaNodeJs",
@@ -692,6 +460,45 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.118.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "Space-Finder/helloLambdaNodeJs/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "Space-Finder/helloLambdaNodeJs/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "s3:ListAllMyBuckets",
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "helloLambdaNodeJsServiceRoleDefaultPolicy14D90D8C",
+                            "roles": [
+                              {
+                                "Ref": "helloLambdaNodeJsServiceRole17C143C3"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.118.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
                       "version": "1.118.0"
                     }
                   }
@@ -745,7 +552,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fbS3Bucket6153F6A5"
+                        "Ref": "AssetParameters460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cbS3Bucket9146292E"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -758,7 +565,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fbS3VersionKey3492BE6B"
+                                      "Ref": "AssetParameters460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cbS3VersionKey0F7169FA"
                                     }
                                   ]
                                 }
@@ -771,7 +578,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters0d575e15d28ac90ca660931334e8b8573bc27517f33f3105e6b100c7253072fbS3VersionKey3492BE6B"
+                                      "Ref": "AssetParameters460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cbS3VersionKey0F7169FA"
                                     }
                                   ]
                                 }
@@ -804,6 +611,50 @@
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
+              "version": "1.118.0"
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "Space-Finder/AssetParameters",
+            "children": {
+              "460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cb": {
+                "id": "460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cb",
+                "path": "Space-Finder/AssetParameters/460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cb",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "Space-Finder/AssetParameters/460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cb/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.118.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "Space-Finder/AssetParameters/460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cb/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.118.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "Space-Finder/AssetParameters/460e72edbfb3ea63012e796b6d8b918cdae5ed383f1b60de32c04252d2f8d2cb/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.118.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.118.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
               "version": "1.118.0"
             }
           },
