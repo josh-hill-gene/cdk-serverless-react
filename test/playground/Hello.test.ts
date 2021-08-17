@@ -1,9 +1,4 @@
-import { handler } from '../../services/SpacesTable/Create';
+import { handler } from '../../services/SpacesTable/Read';
 
-const event = {
-    body: {
-        location: 'Sugar Land'
-    }
-};
 
-handler(event as any, {} as any);
+handler({} as any, {} as any);
