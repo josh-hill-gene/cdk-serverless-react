@@ -3,3 +3,11 @@
 GET {{endpoint}}/hello
 ###
 
+POST {{endpoint}}/spaces
+Content-Type: application/json
+
+{
+    "location": "Austin",
+    "name": "Ladybird Lake"
+}
+###
