@@ -1,19 +1,28 @@
 @endpoint = https://g0djw4hhyj.execute-api.us-east-1.amazonaws.com/prod/
 
-GET {{endpoint}}/hello
+GET {{endpoint}}/spaces
 ###
 
-GET {{endpoint}}/spaces?spaceId=5571c78e-c888-4805-bb09-607b55d7d09c
-###
-
-GET {{endpoint}}/spaces?location=Austin
+GET {{endpoint}}/spaces?spaceId=4055d522-4515-4a0a-99ae-9cb686450111
 ###
 
 POST {{endpoint}}/spaces
 Content-Type: application/json
 
 {
-    "location": "San Antonio",
-    "name": "River Walk"
+    "location": "Leakey",
+    "name": "Garner State Park"
 }
+###
+
+PUT {{endpoint}}/spaces?spaceId=d49cdd0f-1ec8-4524-a220-332620127216
+Content-Type: application/json
+
+{
+    "location": "Leakey",
+    "name": "Frio River"
+}
+###
+
+DELETE {{endpoint}}/spaces?spaceId=bd080324-e1e2-40b5-9e6f-6bcb080046d3
 ###

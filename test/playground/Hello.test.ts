@@ -1,9 +1,9 @@
 import { APIGatewayProxyEvent } from 'aws-lambda';
-import { handler } from '../../services/SpacesTable/Update';
+import { handler } from '../../services/SpacesTable/Delete';
 
 const event: APIGatewayProxyEvent = {
     queryStringParameters: {
-        spaceId: '5832b40f-4b17-46de-9fe6-7b411cffb1b7'
+        spaceId: '2667604c-e4ff-4193-86b6-c31726e0a917'
         // location: 'San Antonio'
     },
     body: {
