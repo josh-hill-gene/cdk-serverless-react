@@ -38,12 +38,12 @@ async function queryWithPrimaryPartition(queryParams: APIGatewayProxyEventQueryS
     const keyValue = queryParams[PRIMARY_KEY!];
     const queryResponse = await dbClient.query({
         TableName: TABLE_NAME!,
-        KeyConditionExpression: ' #zz = :zzzz',
+        KeyConditionExpression: ' #key = :value',
         ExpressionAttributeNames: {
-            '#zz': PRIMARY_KEY!
+            '#key': PRIMARY_KEY!
         },
         ExpressionAttributeValues: {
-            ':zzzz': keyValue
+            ':value': keyValue
         }
     }).promise();
     return JSON.stringify(queryResponse.Items);

@@ -6,7 +6,7 @@ GET {{endpoint}}/hello
 GET {{endpoint}}/spaces?spaceId=5571c78e-c888-4805-bb09-607b55d7d09c
 ###
 
-GET {{endpoint}}/spaces?location='Sugar Land'
+GET {{endpoint}}/spaces?location=Austin
 ###
 
 POST {{endpoint}}/spaces
