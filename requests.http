@@ -3,11 +3,14 @@
 GET {{endpoint}}/hello
 ###
 
+GET {{endpoint}}/spaces?spaceId=5571c78e-c888-4805-bb09-607b55d7d09c
+###
+
 POST {{endpoint}}/spaces
 Content-Type: application/json
 
 {
-    "location": "Austin",
-    "name": "Ladybird Lake"
+    "location": "San Antonio",
+    "name": "River Walk"
 }
 ###

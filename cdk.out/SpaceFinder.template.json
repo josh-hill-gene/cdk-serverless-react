@@ -60,7 +60,7 @@
         "aws:cdk:path": "Space-Finder/SpaceApi/Account"
       }
     },
-    "SpaceApiDeploymentA2B9E765fa5e90d256b51544c38ab6c6458a392d": {
+    "SpaceApiDeploymentA2B9E7653028febf9d3ff0250e48bc542a7f54d6": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -71,6 +71,7 @@
       "DependsOn": [
         "SpaceApihelloGET65983C27",
         "SpaceApihelloDF776653",
+        "SpaceApispacesGET6C083CB2",
         "SpaceApispacesPOST1DDB27B3",
         "SpaceApispacesD5EE855F"
       ],
@@ -85,7 +86,7 @@
           "Ref": "SpaceApi1B373D2B"
         },
         "DeploymentId": {
-          "Ref": "SpaceApiDeploymentA2B9E765fa5e90d256b51544c38ab6c6458a392d"
+          "Ref": "SpaceApiDeploymentA2B9E7653028febf9d3ff0250e48bc542a7f54d6"
         },
         "StageName": "prod"
       },
@@ -383,6 +384,133 @@
         "aws:cdk:path": "Space-Finder/SpaceApi/Default/spaces/POST/Resource"
       }
     },
+    "SpaceApispacesGETApiPermissionSpaceFinderSpaceApi1F575F27GETspacesE64E6796": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "SpacesTableReadC88C4D14",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "SpaceApi1B373D2B"
+              },
+              "/",
+              {
+                "Ref": "SpaceApiDeploymentStageprodBB8A31FE"
+              },
+              "/GET/spaces"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpaceApi/Default/spaces/GET/ApiPermission.SpaceFinderSpaceApi1F575F27.GET..spaces"
+      }
+    },
+    "SpaceApispacesGETApiPermissionTestSpaceFinderSpaceApi1F575F27GETspaces3FB21BD7": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "SpacesTableReadC88C4D14",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "SpaceApi1B373D2B"
+              },
+              "/test-invoke-stage/GET/spaces"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpaceApi/Default/spaces/GET/ApiPermission.Test.SpaceFinderSpaceApi1F575F27.GET..spaces"
+      }
+    },
+    "SpaceApispacesGET6C083CB2": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "SpaceApispacesD5EE855F"
+        },
+        "RestApiId": {
+          "Ref": "SpaceApi1B373D2B"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "SpacesTableReadC88C4D14",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpaceApi/Default/spaces/GET/Resource"
+      }
+    },
     "SpacesTable8A997355": {
       "Type": "AWS::DynamoDB::Table",
       "Properties": {
@@ -548,6 +676,150 @@
       "Metadata": {
         "aws:cdk:path": "Space-Finder/SpacesTable-Create/Resource",
         "aws:asset:path": "asset.8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
+        "aws:asset:property": "Code"
+      }
+    },
+    "SpacesTableReadServiceRoleDC90AD04": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpacesTable-Read/ServiceRole/Resource"
+      }
+    },
+    "SpacesTableReadServiceRoleDefaultPolicyEAD1E3B1": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "dynamodb:BatchGetItem",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+                "dynamodb:Query",
+                "dynamodb:GetItem",
+                "dynamodb:Scan",
+                "dynamodb:ConditionCheckItem"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "SpacesTable8A997355",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Ref": "AWS::NoValue"
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "SpacesTableReadServiceRoleDefaultPolicyEAD1E3B1",
+        "Roles": [
+          {
+            "Ref": "SpacesTableReadServiceRoleDC90AD04"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpacesTable-Read/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "SpacesTableReadC88C4D14": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3BucketECA0F782"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3VersionKey18C5AD62"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3VersionKey18C5AD62"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "SpacesTableReadServiceRoleDC90AD04",
+            "Arn"
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "TABLE_NAME": "SpacesTable",
+            "PRIMARY_KEY": "spaceId",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
+          }
+        },
+        "FunctionName": "SpacesTable-Read",
+        "Handler": "index.handler",
+        "Runtime": "nodejs14.x"
+      },
+      "DependsOn": [
+        "SpacesTableReadServiceRoleDefaultPolicyEAD1E3B1",
+        "SpacesTableReadServiceRoleDC90AD04"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpacesTable-Read/Resource",
+        "aws:asset:path": "asset.18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4",
         "aws:asset:property": "Code"
       }
     },
@@ -725,6 +997,18 @@
     "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cArtifactHashB90CCB60": {
       "Type": "String",
       "Description": "Artifact hash for asset \"8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c\""
+    },
+    "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3BucketECA0F782": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4\""
+    },
+    "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3VersionKey18C5AD62": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4\""
+    },
+    "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4ArtifactHash020C90B4": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4\""
     },
     "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927S3Bucket99312E9E": {
       "Type": "String",
