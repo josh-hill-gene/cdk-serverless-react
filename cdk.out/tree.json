@@ -725,6 +725,28 @@
                       {
                         "attributeName": "spaceId",
                         "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "location",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "globalSecondaryIndexes": [
+                      {
+                        "indexName": "location",
+                        "keySchema": [
+                          {
+                            "attributeName": "location",
+                            "keyType": "HASH"
+                          }
+                        ],
+                        "projection": {
+                          "projectionType": "ALL"
+                        },
+                        "provisionedThroughput": {
+                          "readCapacityUnits": 5,
+                          "writeCapacityUnits": 5
+                        }
                       }
                     ],
                     "provisionedThroughput": {
@@ -828,7 +850,18 @@
                                       ]
                                     },
                                     {
-                                      "Ref": "AWS::NoValue"
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          {
+                                            "Fn::GetAtt": [
+                                              "SpacesTable8A997355",
+                                              "Arn"
+                                            ]
+                                          },
+                                          "/index/*"
+                                        ]
+                                      ]
                                     }
                                   ]
                                 }
@@ -1007,13 +1040,13 @@
                   "version": "1.118.0"
                 }
               },
-              "18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4": {
-                "id": "18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4",
-                "path": "Space-Finder/AssetParameters/18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4",
+              "c37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1": {
+                "id": "c37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1",
+                "path": "Space-Finder/AssetParameters/c37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "Space-Finder/AssetParameters/18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4/S3Bucket",
+                    "path": "Space-Finder/AssetParameters/c37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.118.0"
@@ -1021,7 +1054,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "Space-Finder/AssetParameters/18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4/S3VersionKey",
+                    "path": "Space-Finder/AssetParameters/c37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.118.0"
@@ -1029,7 +1062,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "Space-Finder/AssetParameters/18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4/ArtifactHash",
+                    "path": "Space-Finder/AssetParameters/c37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.118.0"
@@ -1159,7 +1192,18 @@
                                       ]
                                     },
                                     {
-                                      "Ref": "AWS::NoValue"
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          {
+                                            "Fn::GetAtt": [
+                                              "SpacesTable8A997355",
+                                              "Arn"
+                                            ]
+                                          },
+                                          "/index/*"
+                                        ]
+                                      ]
                                     }
                                   ]
                                 }
@@ -1235,7 +1279,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3BucketECA0F782"
+                        "Ref": "AssetParametersc37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1S3BucketCD6D8D8D"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -1248,7 +1292,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3VersionKey18C5AD62"
+                                      "Ref": "AssetParametersc37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1S3VersionKey91C5F0C0"
                                     }
                                   ]
                                 }
@@ -1261,7 +1305,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters18596775993a207f42d8278d18a69f0cc47eff48d2f84f1a3e2dc46e98399be4S3VersionKey18C5AD62"
+                                      "Ref": "AssetParametersc37bffdd6009575ccc3dd5c5814e22ca36030f3a3f76a72c390c9eb264f39dd1S3VersionKey91C5F0C0"
                                     }
                                   ]
                                 }
