@@ -60,7 +60,7 @@
         "aws:cdk:path": "Space-Finder/SpaceApi/Account"
       }
     },
-    "SpaceApiDeploymentA2B9E765f2dd2a38fea90ead94e623f6096df8ae": {
+    "SpaceApiDeploymentA2B9E76581623f6599f86cccdc545073c61643a2": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -88,7 +88,7 @@
           "Ref": "SpaceApi1B373D2B"
         },
         "DeploymentId": {
-          "Ref": "SpaceApiDeploymentA2B9E765f2dd2a38fea90ead94e623f6096df8ae"
+          "Ref": "SpaceApiDeploymentA2B9E76581623f6599f86cccdc545073c61643a2"
         },
         "StageName": "prod"
       },
@@ -208,7 +208,10 @@
         "RestApiId": {
           "Ref": "SpaceApi1B373D2B"
         },
-        "AuthorizationType": "NONE",
+        "AuthorizationType": "COGNITO_USER_POOLS",
+        "AuthorizerId": {
+          "Ref": "SpaceUserAuthorizer401AE1AA"
+        },
         "Integration": {
           "IntegrationHttpMethod": "POST",
           "Type": "AWS_PROXY",
@@ -905,7 +908,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3Bucket00B2067F"
+            "Ref": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3BucketAE4C9DCE"
           },
           "S3Key": {
             "Fn::Join": [
@@ -918,7 +921,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0"
+                          "Ref": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651"
                         }
                       ]
                     }
@@ -931,7 +934,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0"
+                          "Ref": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651"
                         }
                       ]
                     }
@@ -964,7 +967,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "Space-Finder/SpacesTable-Create/Resource",
-        "aws:asset:path": "asset.8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
+        "aws:asset:path": "asset.1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc",
         "aws:asset:property": "Code"
       }
     },
@@ -1212,7 +1215,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3BucketDE684399"
+            "Ref": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3BucketE1366D14"
           },
           "S3Key": {
             "Fn::Join": [
@@ -1225,7 +1228,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65"
+                          "Ref": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F"
                         }
                       ]
                     }
@@ -1238,7 +1241,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65"
+                          "Ref": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F"
                         }
                       ]
                     }
@@ -1271,7 +1274,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "Space-Finder/SpacesTable-Update/Resource",
-        "aws:asset:path": "asset.67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416",
+        "aws:asset:path": "asset.689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43",
         "aws:asset:property": "Code"
       }
     },
@@ -1364,7 +1367,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3Bucket02293AF7"
+            "Ref": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3Bucket921E8162"
           },
           "S3Key": {
             "Fn::Join": [
@@ -1377,7 +1380,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF"
+                          "Ref": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD"
                         }
                       ]
                     }
@@ -1390,7 +1393,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF"
+                          "Ref": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD"
                         }
                       ]
                     }
@@ -1423,8 +1426,109 @@
       ],
       "Metadata": {
         "aws:cdk:path": "Space-Finder/SpacesTable-Delete/Resource",
-        "aws:asset:path": "asset.972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7",
+        "aws:asset:path": "asset.ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62",
         "aws:asset:property": "Code"
+      }
+    },
+    "SpaceUserPool6AB542DC": {
+      "Type": "AWS::Cognito::UserPool",
+      "Properties": {
+        "AccountRecoverySetting": {
+          "RecoveryMechanisms": [
+            {
+              "Name": "verified_phone_number",
+              "Priority": 1
+            },
+            {
+              "Name": "verified_email",
+              "Priority": 2
+            }
+          ]
+        },
+        "AdminCreateUserConfig": {
+          "AllowAdminCreateUserOnly": false
+        },
+        "AliasAttributes": [
+          "email"
+        ],
+        "AutoVerifiedAttributes": [
+          "email"
+        ],
+        "EmailVerificationMessage": "The verification code to your new account is {####}",
+        "EmailVerificationSubject": "Verify your new account",
+        "SmsVerificationMessage": "The verification code to your new account is {####}",
+        "UserPoolName": "SpaceUserPool",
+        "VerificationMessageTemplate": {
+          "DefaultEmailOption": "CONFIRM_WITH_CODE",
+          "EmailMessage": "The verification code to your new account is {####}",
+          "EmailSubject": "Verify your new account",
+          "SmsMessage": "The verification code to your new account is {####}"
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpaceUserPool/Resource"
+      }
+    },
+    "SpaceUserPoolSpaceUserPoolclient4839E5E8": {
+      "Type": "AWS::Cognito::UserPoolClient",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "SpaceUserPool6AB542DC"
+        },
+        "AllowedOAuthFlows": [
+          "implicit",
+          "code"
+        ],
+        "AllowedOAuthFlowsUserPoolClient": true,
+        "AllowedOAuthScopes": [
+          "profile",
+          "phone",
+          "email",
+          "openid",
+          "aws.cognito.signin.user.admin"
+        ],
+        "CallbackURLs": [
+          "https://example.com"
+        ],
+        "ClientName": "SpaceUserPool-client",
+        "ExplicitAuthFlows": [
+          "ALLOW_USER_PASSWORD_AUTH",
+          "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+          "ALLOW_CUSTOM_AUTH",
+          "ALLOW_USER_SRP_AUTH",
+          "ALLOW_REFRESH_TOKEN_AUTH"
+        ],
+        "GenerateSecret": false,
+        "SupportedIdentityProviders": [
+          "COGNITO"
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpaceUserPool/SpaceUserPool-client/Resource"
+      }
+    },
+    "SpaceUserAuthorizer401AE1AA": {
+      "Type": "AWS::ApiGateway::Authorizer",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "SpaceApi1B373D2B"
+        },
+        "Type": "COGNITO_USER_POOLS",
+        "IdentitySource": "method.request.header.Authorization",
+        "Name": "SpaceUserAuthorizer",
+        "ProviderARNs": [
+          {
+            "Fn::GetAtt": [
+              "SpaceUserPool6AB542DC",
+              "Arn"
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "Space-Finder/SpaceUserAuthorizer/Resource"
       }
     },
     "helloLambdaNodeJsServiceRole17C143C3": {
@@ -1553,7 +1657,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAAE1VQXU/DMAz8LXtPMyqkiUe6Id6AafAHvMSMtE1SxQ5TVfW/k6SUjyffOWdfzrWs6zt5s7mHK1VKd9tJ+YByemVQnTi8u5fIQ2RxQvIxKBQNEXJ6vRh3EQfviENUnJVHCGCRMWTyo084qbRh490ssssEg7kA4xVGOSUdN4P5Hllho5SPjsUDDr0fLbpi8IflD5TdC1jd9kC/5N83npA/vM6tBc3CgE32vl90uR59b9RYohQ0ix7sWYOccguDNUQpRRY8RqeWRHp0YL0+y+kNzsuyAtbhynmNLcnnUtY5QbcV5EuSLAdNXO6j6pBzhHkWeUq2tP2sd3In601LxlQh3cRYlKelfgHDS7cZvAEAAA=="
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAE1VQy07DMBD8lt4dlwipEjfSIm5AVeADXHsJbhNv5LWpgpV/x3bqlp52Znf2MVvzun7gd4tHcaJKquMySLTAw7sT8sg2X+bNu8E7tgNCbyWwhghcrLbatGyDhpz10iXlVljRgwObyEUfcVQp7TSaiaUtQQy6FQ5OYuQh6lwz6HNLgY2U6I1jTzB0OPZg8oJ/LB2QZ8+gbFsLupKbM17AfaNKqYKwNdrhJ4HdInbU+Ji2+nc+/8ompkUf78RuHpjiFjstx+w5o4l1ot8rwUNKge01UbSbBM/eyNm6Go3oUe15+BD7eVgGpbkyqOBA/DWH0sfovhLp5cTz5yPnay+P4LJXObvgofhIYy+4gE2nzy+8zUzTxNJWfqDlT73iK14vDqR1ZePzdQ98N8c/E8T3nCUCAAA="
       },
       "Metadata": {
         "aws:cdk:path": "Space-Finder/CDKMetadata/Default"
@@ -1587,20 +1691,30 @@
           ]
         ]
       }
+    },
+    "UserPoolId": {
+      "Value": {
+        "Ref": "SpaceUserPool6AB542DC"
+      }
+    },
+    "UserPoolClientId": {
+      "Value": {
+        "Ref": "SpaceUserPoolSpaceUserPoolclient4839E5E8"
+      }
     }
   },
   "Parameters": {
-    "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3Bucket00B2067F": {
+    "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3BucketAE4C9DCE": {
       "Type": "String",
-      "Description": "S3 bucket for asset \"8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c\""
+      "Description": "S3 bucket for asset \"1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc\""
     },
-    "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0": {
+    "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651": {
       "Type": "String",
-      "Description": "S3 key for asset version \"8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c\""
+      "Description": "S3 key for asset version \"1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc\""
     },
-    "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cArtifactHashB90CCB60": {
+    "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcArtifactHash884148B8": {
       "Type": "String",
-      "Description": "Artifact hash for asset \"8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c\""
+      "Description": "Artifact hash for asset \"1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc\""
     },
     "AssetParameters3bd55696deab99928b4c59b38df3d22efc3f583747b95de1a0db29d0c3a75a09S3BucketA92D95D1": {
       "Type": "String",
@@ -1614,29 +1728,29 @@
       "Type": "String",
       "Description": "Artifact hash for asset \"3bd55696deab99928b4c59b38df3d22efc3f583747b95de1a0db29d0c3a75a09\""
     },
-    "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3BucketDE684399": {
+    "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3BucketE1366D14": {
       "Type": "String",
-      "Description": "S3 bucket for asset \"67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416\""
+      "Description": "S3 bucket for asset \"689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43\""
     },
-    "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65": {
+    "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F": {
       "Type": "String",
-      "Description": "S3 key for asset version \"67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416\""
+      "Description": "S3 key for asset version \"689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43\""
     },
-    "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416ArtifactHashF26C665A": {
+    "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43ArtifactHash8E43A699": {
       "Type": "String",
-      "Description": "Artifact hash for asset \"67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416\""
+      "Description": "Artifact hash for asset \"689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43\""
     },
-    "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3Bucket02293AF7": {
+    "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3Bucket921E8162": {
       "Type": "String",
-      "Description": "S3 bucket for asset \"972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7\""
+      "Description": "S3 bucket for asset \"ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62\""
     },
-    "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF": {
+    "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD": {
       "Type": "String",
-      "Description": "S3 key for asset version \"972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7\""
+      "Description": "S3 key for asset version \"ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62\""
     },
-    "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7ArtifactHash78FB9D72": {
+    "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62ArtifactHash3466D1FC": {
       "Type": "String",
-      "Description": "Artifact hash for asset \"972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7\""
+      "Description": "Artifact hash for asset \"ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62\""
     },
     "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927S3Bucket99312E9E": {
       "Type": "String",

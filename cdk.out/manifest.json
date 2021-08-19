@@ -19,13 +19,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
-              "id": "8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
+              "path": "asset.1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc",
+              "id": "1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc",
               "packaging": "zip",
-              "sourceHash": "8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
-              "s3BucketParameter": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3Bucket00B2067F",
-              "s3KeyParameter": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0",
-              "artifactHashParameter": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cArtifactHashB90CCB60"
+              "sourceHash": "1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc",
+              "s3BucketParameter": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3BucketAE4C9DCE",
+              "s3KeyParameter": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651",
+              "artifactHashParameter": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcArtifactHash884148B8"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -41,7 +41,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:72:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -85,7 +85,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:76:36)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -107,13 +107,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416",
-              "id": "67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416",
+              "path": "asset.689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43",
+              "id": "689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43",
               "packaging": "zip",
-              "sourceHash": "67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416",
-              "s3BucketParameter": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3BucketDE684399",
-              "s3KeyParameter": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65",
-              "artifactHashParameter": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416ArtifactHashF26C665A"
+              "sourceHash": "689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43",
+              "s3BucketParameter": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3BucketE1366D14",
+              "s3KeyParameter": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F",
+              "artifactHashParameter": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43ArtifactHash8E43A699"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -129,7 +129,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:80:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -151,13 +151,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7",
-              "id": "972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7",
+              "path": "asset.ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62",
+              "id": "ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62",
               "packaging": "zip",
-              "sourceHash": "972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7",
-              "s3BucketParameter": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3Bucket02293AF7",
-              "s3KeyParameter": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF",
-              "artifactHashParameter": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7ArtifactHash78FB9D72"
+              "sourceHash": "ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62",
+              "s3BucketParameter": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3Bucket921E8162",
+              "s3KeyParameter": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD",
+              "artifactHashParameter": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62ArtifactHash3466D1FC"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -173,7 +173,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:84:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -213,7 +213,7 @@
               "AssetCode.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NodejsFunction (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:51:5)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:30:35)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:29:35)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -317,7 +317,7 @@
         "/Space-Finder/SpaceApi/Deployment/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "SpaceApiDeploymentA2B9E765f2dd2a38fea90ead94e623f6096df8ae",
+            "data": "SpaceApiDeploymentA2B9E76581623f6599f86cccdc545073c61643a2",
             "trace": [
               "new Deployment (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
               "RestApi._configureDeployment (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
@@ -404,7 +404,7 @@
             "trace": [
               "new Resource (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
               "RootResource.addResource (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:41:51)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:47:51)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -433,7 +433,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:42:29)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:48:29)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -462,7 +462,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:42:29)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:48:29)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -489,7 +489,7 @@
             "trace": [
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:42:29)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:48:29)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -516,7 +516,7 @@
             "trace": [
               "new Resource (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
               "RootResource.addResource (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:44:45)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:50:45)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -545,7 +545,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:45:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:51:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -574,7 +574,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:45:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:51:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -601,7 +601,7 @@
             "trace": [
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:45:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:51:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -630,7 +630,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:46:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:52:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -659,7 +659,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:46:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:52:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -686,7 +686,7 @@
             "trace": [
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:46:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:52:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -715,7 +715,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:47:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:53:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -744,7 +744,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:47:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:53:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -771,7 +771,7 @@
             "trace": [
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:47:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:53:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -800,7 +800,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:48:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:54:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -829,7 +829,7 @@
               "LambdaIntegration.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:48:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:54:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -856,7 +856,7 @@
             "trace": [
               "new Method (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
               "Resource.addMethod (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:48:23)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:54:23)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -888,7 +888,7 @@
               "GenericTable.createTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:47:22)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:40:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -917,7 +917,7 @@
               "GenericTable.createTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:47:22)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:40:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -949,7 +949,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:72:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -982,7 +982,7 @@
               "GenericTable.grantTableRights (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:91:24)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:43:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1013,7 +1013,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:72:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1033,10 +1033,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c/S3Bucket": [
+        "/Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3Bucket00B2067F",
+            "data": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3BucketAE4C9DCE",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1051,7 +1051,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:72:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1071,10 +1071,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c/S3VersionKey": [
+        "/Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0",
+            "data": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1089,7 +1089,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:72:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1109,10 +1109,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c/ArtifactHash": [
+        "/Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cArtifactHashB90CCB60",
+            "data": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcArtifactHash884148B8",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1127,7 +1127,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:72:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1165,7 +1165,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:76:36)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1203,7 +1203,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:76:36)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1241,7 +1241,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:76:36)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1261,10 +1261,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416/S3Bucket": [
+        "/Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3BucketDE684399",
+            "data": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3BucketE1366D14",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1279,7 +1279,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:80:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1299,10 +1299,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416/S3VersionKey": [
+        "/Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65",
+            "data": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1317,7 +1317,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:80:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1337,10 +1337,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416/ArtifactHash": [
+        "/Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416ArtifactHashF26C665A",
+            "data": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43ArtifactHash8E43A699",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1355,7 +1355,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:80:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1375,10 +1375,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7/S3Bucket": [
+        "/Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3Bucket02293AF7",
+            "data": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3Bucket921E8162",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1393,7 +1393,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:84:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1413,10 +1413,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7/S3VersionKey": [
+        "/Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF",
+            "data": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1431,7 +1431,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:84:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1451,10 +1451,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7/ArtifactHash": [
+        "/Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7ArtifactHash78FB9D72",
+            "data": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62ArtifactHash3466D1FC",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1469,7 +1469,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:84:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1503,7 +1503,7 @@
               "AssetCode.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NodejsFunction (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:51:5)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:30:35)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:29:35)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1537,7 +1537,7 @@
               "AssetCode.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NodejsFunction (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:51:5)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:30:35)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:29:35)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1571,7 +1571,7 @@
               "AssetCode.bind (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NodejsFunction (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:51:5)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:30:35)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:29:35)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1603,7 +1603,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:76:36)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1636,7 +1636,7 @@
               "GenericTable.grantTableRights (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:94:24)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:43:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1667,7 +1667,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:76:36)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1699,7 +1699,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:80:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1732,7 +1732,7 @@
               "GenericTable.grantTableRights (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:97:24)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:43:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1763,7 +1763,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:80:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1795,7 +1795,7 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:84:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1828,7 +1828,7 @@
               "GenericTable.grantTableRights (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:100:24)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:43:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1859,7 +1859,151 @@
               "GenericTable.createLambdas (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:84:38)",
               "GenericTable.initialize (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:42:14)",
               "new GenericTable (/Users/hillj38/development/cdk-serverless-react/infrastructure/GenericTable.ts:36:14)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:17:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:14:27)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1314:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "main (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/Space-Finder/SpaceUserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpaceUserPool6AB542DC",
+            "trace": [
+              "new UserPool (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:432:22)",
+              "AuthorizerWrapper.createUserPool (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:26:25)",
+              "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:20:14)",
+              "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1314:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "main (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/Space-Finder/SpaceUserPool/SpaceUserPool-client/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpaceUserPoolSpaceUserPoolclient4839E5E8",
+            "trace": [
+              "new UserPoolClient (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-cognito/lib/user-pool-client.ts:209:22)",
+              "UserPool.addClient (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:320:12)",
+              "AuthorizerWrapper.addUserPoolClient (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:40:45)",
+              "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:21:14)",
+              "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1314:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "main (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/Space-Finder/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId",
+            "trace": [
+              "AuthorizerWrapper.createUserPool (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:34:9)",
+              "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:20:14)",
+              "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1314:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "main (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/Space-Finder/UserPoolClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClientId",
+            "trace": [
+              "AuthorizerWrapper.addUserPoolClient (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:50:9)",
+              "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:21:14)",
+              "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1314:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "main (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/Space-Finder/SpaceUserAuthorizer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpaceUserAuthorizer401AE1AA",
+            "trace": [
+              "new CognitoUserPoolsAuthorizer (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/authorizers/cognito.ts:41:22)",
+              "AuthorizerWrapper.createAuthorizer (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:56:27)",
+              "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:22:14)",
+              "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1887,7 +2031,7 @@
               "new Role (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
               "new Function (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:311:31)",
               "new NodejsFunction (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:51:5)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:30:35)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:29:35)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1915,7 +2059,7 @@
               "new Policy (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
               "Role.addToPrincipalPolicy (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
               "NodejsFunction.addToRolePolicy (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:146:15)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:38:27)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:37:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
@@ -1942,7 +2086,7 @@
             "trace": [
               "new Function (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:373:35)",
               "new NodejsFunction (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:51:5)",
-              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:30:35)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:29:35)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",

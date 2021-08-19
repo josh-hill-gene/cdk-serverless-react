@@ -9,7 +9,7 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "@aws-cdk/core.Construct",
-          "version": "1.118.0"
+          "version": "1.119.0"
         }
       },
       "Space-Finder": {
@@ -31,7 +31,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnRestApi",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "CloudWatchRole": {
@@ -74,13 +74,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Account": {
@@ -99,7 +99,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnAccount",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Deployment": {
@@ -120,13 +120,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.CfnDeployment",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.Deployment",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "DeploymentStage.prod": {
@@ -143,20 +143,20 @@
                           "Ref": "SpaceApi1B373D2B"
                         },
                         "deploymentId": {
-                          "Ref": "SpaceApiDeploymentA2B9E765f2dd2a38fea90ead94e623f6096df8ae"
+                          "Ref": "SpaceApiDeploymentA2B9E76581623f6599f86cccdc545073c61643a2"
                         },
                         "stageName": "prod"
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.CfnStage",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.Stage",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Endpoint": {
@@ -164,7 +164,7 @@
                 "path": "Space-Finder/SpaceApi/Endpoint",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Default": {
@@ -195,7 +195,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.CfnResource",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       },
                       "GET": {
@@ -248,7 +248,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderSpaceApi1F575F27.GET..hello": {
@@ -293,7 +293,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "Resource": {
@@ -309,7 +309,10 @@
                                 "restApiId": {
                                   "Ref": "SpaceApi1B373D2B"
                                 },
-                                "authorizationType": "NONE",
+                                "authorizationType": "COGNITO_USER_POOLS",
+                                "authorizerId": {
+                                  "Ref": "SpaceUserAuthorizer401AE1AA"
+                                },
                                 "integration": {
                                   "type": "AWS_PROXY",
                                   "uri": {
@@ -341,19 +344,19 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.Resource",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "spaces": {
@@ -380,7 +383,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.CfnResource",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       },
                       "POST": {
@@ -433,7 +436,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderSpaceApi1F575F27.POST..spaces": {
@@ -478,7 +481,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "Resource": {
@@ -526,13 +529,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       },
                       "GET": {
@@ -585,7 +588,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderSpaceApi1F575F27.GET..spaces": {
@@ -630,7 +633,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "Resource": {
@@ -678,13 +681,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       },
                       "PUT": {
@@ -737,7 +740,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderSpaceApi1F575F27.PUT..spaces": {
@@ -782,7 +785,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "Resource": {
@@ -830,13 +833,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       },
                       "DELETE": {
@@ -889,7 +892,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "ApiPermission.Test.SpaceFinderSpaceApi1F575F27.DELETE..spaces": {
@@ -934,7 +937,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           },
                           "Resource": {
@@ -982,31 +985,31 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.118.0"
+                              "version": "1.119.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.Resource",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.ResourceBase",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-apigateway.RestApi",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "SpacesTable": {
@@ -1062,7 +1065,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "ScalingRole": {
@@ -1070,13 +1073,13 @@
                 "path": "Space-Finder/SpacesTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "SpacesTable-Create": {
@@ -1123,7 +1126,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1182,19 +1185,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Code": {
@@ -1206,7 +1209,7 @@
                     "path": "Space-Finder/SpacesTable-Create/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "AssetBucket": {
@@ -1218,19 +1221,19 @@
                         "path": "Space-Finder/SpacesTable-Create/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Resource": {
@@ -1241,7 +1244,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3Bucket00B2067F"
+                        "Ref": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3BucketAE4C9DCE"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -1254,7 +1257,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0"
+                                      "Ref": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651"
                                     }
                                   ]
                                 }
@@ -1267,7 +1270,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1cS3VersionKeyCC5665B0"
+                                      "Ref": "AssetParameters1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dcS3VersionKey5F035651"
                                     }
                                   ]
                                 }
@@ -1297,51 +1300,51 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "AssetParameters": {
             "id": "AssetParameters",
             "path": "Space-Finder/AssetParameters",
             "children": {
-              "8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c": {
-                "id": "8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
-                "path": "Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c",
+              "1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc": {
+                "id": "1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc",
+                "path": "Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c/S3Bucket",
+                    "path": "Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c/S3VersionKey",
+                    "path": "Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "Space-Finder/AssetParameters/8e6d2faed0316bec394216325857dba1e61335605bc306b999558244566a4a1c/ArtifactHash",
+                    "path": "Space-Finder/AssetParameters/1283382b971570b71f4e2170b5b26af888d32a8de1cbf48fb0a26d99573ef5dc/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "3bd55696deab99928b4c59b38df3d22efc3f583747b95de1a0db29d0c3a75a09": {
@@ -1353,7 +1356,7 @@
                     "path": "Space-Finder/AssetParameters/3bd55696deab99928b4c59b38df3d22efc3f583747b95de1a0db29d0c3a75a09/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "S3VersionKey": {
@@ -1361,7 +1364,7 @@
                     "path": "Space-Finder/AssetParameters/3bd55696deab99928b4c59b38df3d22efc3f583747b95de1a0db29d0c3a75a09/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "ArtifactHash": {
@@ -1369,81 +1372,81 @@
                     "path": "Space-Finder/AssetParameters/3bd55696deab99928b4c59b38df3d22efc3f583747b95de1a0db29d0c3a75a09/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
-              "67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416": {
-                "id": "67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416",
-                "path": "Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416",
+              "689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43": {
+                "id": "689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43",
+                "path": "Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416/S3Bucket",
+                    "path": "Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416/S3VersionKey",
+                    "path": "Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "Space-Finder/AssetParameters/67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416/ArtifactHash",
+                    "path": "Space-Finder/AssetParameters/689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
-              "972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7": {
-                "id": "972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7",
-                "path": "Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7",
+              "ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62": {
+                "id": "ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62",
+                "path": "Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7/S3Bucket",
+                    "path": "Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7/S3VersionKey",
+                    "path": "Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "Space-Finder/AssetParameters/972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7/ArtifactHash",
+                    "path": "Space-Finder/AssetParameters/ca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927": {
@@ -1455,7 +1458,7 @@
                     "path": "Space-Finder/AssetParameters/e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "S3VersionKey": {
@@ -1463,7 +1466,7 @@
                     "path": "Space-Finder/AssetParameters/e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "ArtifactHash": {
@@ -1471,19 +1474,19 @@
                     "path": "Space-Finder/AssetParameters/e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "SpacesTable-Read": {
@@ -1530,7 +1533,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1592,19 +1595,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Code": {
@@ -1616,7 +1619,7 @@
                     "path": "Space-Finder/SpacesTable-Read/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "AssetBucket": {
@@ -1628,19 +1631,19 @@
                         "path": "Space-Finder/SpacesTable-Read/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Resource": {
@@ -1707,13 +1710,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "SpacesTable-Update": {
@@ -1760,7 +1763,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1819,19 +1822,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Code": {
@@ -1843,7 +1846,7 @@
                     "path": "Space-Finder/SpacesTable-Update/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "AssetBucket": {
@@ -1855,19 +1858,19 @@
                         "path": "Space-Finder/SpacesTable-Update/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Resource": {
@@ -1878,7 +1881,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3BucketDE684399"
+                        "Ref": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3BucketE1366D14"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -1891,7 +1894,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65"
+                                      "Ref": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F"
                                     }
                                   ]
                                 }
@@ -1904,7 +1907,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters67c02f1a957e7707f1bbadc8e337b2c4283a9e74aaa5536c630830e54b2d3416S3VersionKey0AF1BD65"
+                                      "Ref": "AssetParameters689dc8f425dfa8ab939e594b5e4f49576d504a527cec8f727adb787f7aa3cf43S3VersionKeyAE9F1C5F"
                                     }
                                   ]
                                 }
@@ -1934,13 +1937,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "SpacesTable-Delete": {
@@ -1987,7 +1990,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -2046,19 +2049,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Code": {
@@ -2070,7 +2073,7 @@
                     "path": "Space-Finder/SpacesTable-Delete/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "AssetBucket": {
@@ -2082,19 +2085,19 @@
                         "path": "Space-Finder/SpacesTable-Delete/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Resource": {
@@ -2105,7 +2108,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3Bucket02293AF7"
+                        "Ref": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3Bucket921E8162"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -2118,7 +2121,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF"
+                                      "Ref": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD"
                                     }
                                   ]
                                 }
@@ -2131,7 +2134,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters972413a12cbc62071d9af59b70cf187bc5a60ea61e7da0e660b21b297677afd7S3VersionKey5FDDFDBF"
+                                      "Ref": "AssetParametersca39b7e5c2a313058754b173856132a13290682bd7230404d725ddb1e1f43b62S3VersionKeyE44DBFBD"
                                     }
                                   ]
                                 }
@@ -2161,13 +2164,173 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.118.0"
+              "version": "1.119.0"
+            }
+          },
+          "SpaceUserPool": {
+            "id": "SpaceUserPool",
+            "path": "Space-Finder/SpaceUserPool",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "Space-Finder/SpaceUserPool/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Cognito::UserPool",
+                  "aws:cdk:cloudformation:props": {
+                    "accountRecoverySetting": {
+                      "recoveryMechanisms": [
+                        {
+                          "name": "verified_phone_number",
+                          "priority": 1
+                        },
+                        {
+                          "name": "verified_email",
+                          "priority": 2
+                        }
+                      ]
+                    },
+                    "adminCreateUserConfig": {
+                      "allowAdminCreateUserOnly": false
+                    },
+                    "aliasAttributes": [
+                      "email"
+                    ],
+                    "autoVerifiedAttributes": [
+                      "email"
+                    ],
+                    "emailVerificationMessage": "The verification code to your new account is {####}",
+                    "emailVerificationSubject": "Verify your new account",
+                    "smsVerificationMessage": "The verification code to your new account is {####}",
+                    "userPoolName": "SpaceUserPool",
+                    "verificationMessageTemplate": {
+                      "defaultEmailOption": "CONFIRM_WITH_CODE",
+                      "emailMessage": "The verification code to your new account is {####}",
+                      "emailSubject": "Verify your new account",
+                      "smsMessage": "The verification code to your new account is {####}"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cognito.CfnUserPool",
+                  "version": "1.119.0"
+                }
+              },
+              "SpaceUserPool-client": {
+                "id": "SpaceUserPool-client",
+                "path": "Space-Finder/SpaceUserPool/SpaceUserPool-client",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "Space-Finder/SpaceUserPool/SpaceUserPool-client/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolClient",
+                      "aws:cdk:cloudformation:props": {
+                        "userPoolId": {
+                          "Ref": "SpaceUserPool6AB542DC"
+                        },
+                        "allowedOAuthFlows": [
+                          "implicit",
+                          "code"
+                        ],
+                        "allowedOAuthFlowsUserPoolClient": true,
+                        "allowedOAuthScopes": [
+                          "profile",
+                          "phone",
+                          "email",
+                          "openid",
+                          "aws.cognito.signin.user.admin"
+                        ],
+                        "callbackUrLs": [
+                          "https://example.com"
+                        ],
+                        "clientName": "SpaceUserPool-client",
+                        "explicitAuthFlows": [
+                          "ALLOW_USER_PASSWORD_AUTH",
+                          "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+                          "ALLOW_CUSTOM_AUTH",
+                          "ALLOW_USER_SRP_AUTH",
+                          "ALLOW_REFRESH_TOKEN_AUTH"
+                        ],
+                        "generateSecret": false,
+                        "supportedIdentityProviders": [
+                          "COGNITO"
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-cognito.CfnUserPoolClient",
+                      "version": "1.119.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cognito.UserPoolClient",
+                  "version": "1.119.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-cognito.UserPool",
+              "version": "1.119.0"
+            }
+          },
+          "UserPoolId": {
+            "id": "UserPoolId",
+            "path": "Space-Finder/UserPoolId",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.119.0"
+            }
+          },
+          "UserPoolClientId": {
+            "id": "UserPoolClientId",
+            "path": "Space-Finder/UserPoolClientId",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.119.0"
+            }
+          },
+          "SpaceUserAuthorizer": {
+            "id": "SpaceUserAuthorizer",
+            "path": "Space-Finder/SpaceUserAuthorizer",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "Space-Finder/SpaceUserAuthorizer/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::Authorizer",
+                  "aws:cdk:cloudformation:props": {
+                    "restApiId": {
+                      "Ref": "SpaceApi1B373D2B"
+                    },
+                    "type": "COGNITO_USER_POOLS",
+                    "identitySource": "method.request.header.Authorization",
+                    "name": "SpaceUserAuthorizer",
+                    "providerArns": [
+                      {
+                        "Fn::GetAtt": [
+                          "SpaceUserPool6AB542DC",
+                          "Arn"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.CfnAuthorizer",
+                  "version": "1.119.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-apigateway.CognitoUserPoolsAuthorizer",
+              "version": "1.119.0"
             }
           },
           "helloLambdaNodeJs": {
@@ -2214,7 +2377,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -2247,19 +2410,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Code": {
@@ -2271,7 +2434,7 @@
                     "path": "Space-Finder/helloLambdaNodeJs/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   },
                   "AssetBucket": {
@@ -2283,19 +2446,19 @@
                         "path": "Space-Finder/helloLambdaNodeJs/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.118.0"
+                          "version": "1.119.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.118.0"
+                      "version": "1.119.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Resource": {
@@ -2359,13 +2522,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           },
           "CDKMetadata": {
@@ -2377,7 +2540,7 @@
                 "path": "Space-Finder/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               },
               "Condition": {
@@ -2385,25 +2548,25 @@
                 "path": "Space-Finder/CDKMetadata/Condition",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnCondition",
-                  "version": "1.118.0"
+                  "version": "1.119.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.118.0"
+              "version": "1.119.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.118.0"
+          "version": "1.119.0"
         }
       }
     },
     "constructInfo": {
       "fqn": "@aws-cdk/core.App",
-      "version": "1.118.0"
+      "version": "1.119.0"
     }
   }
 }

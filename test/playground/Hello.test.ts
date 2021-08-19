@@ -16,5 +16,4 @@ const result = handler(event, {} as any).then((apiResult) => {
     console.log(apiResult);
     const items = JSON.parse(apiResult.body);
     console.log(items);
-    console.log(123);
 });
