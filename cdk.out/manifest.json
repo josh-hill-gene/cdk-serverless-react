@@ -195,13 +195,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927",
-              "id": "e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927",
+              "path": "asset.c7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176",
+              "id": "c7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176",
               "packaging": "zip",
-              "sourceHash": "e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927",
-              "s3BucketParameter": "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927S3Bucket99312E9E",
-              "s3KeyParameter": "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927S3VersionKeyEA07198E",
-              "artifactHashParameter": "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927ArtifactHashE037C307"
+              "sourceHash": "c7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176",
+              "s3BucketParameter": "AssetParametersc7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176S3Bucket47CC8AC5",
+              "s3KeyParameter": "AssetParametersc7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176S3VersionKeyDEF7F957",
+              "artifactHashParameter": "AssetParametersc7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176ArtifactHash91C33A51"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -1489,10 +1489,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927/S3Bucket": [
+        "/Space-Finder/AssetParameters/c7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927S3Bucket99312E9E",
+            "data": "AssetParametersc7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176S3Bucket47CC8AC5",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1523,10 +1523,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927/S3VersionKey": [
+        "/Space-Finder/AssetParameters/c7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927S3VersionKeyEA07198E",
+            "data": "AssetParametersc7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176S3VersionKeyDEF7F957",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1557,10 +1557,10 @@
             ]
           }
         ],
-        "/Space-Finder/AssetParameters/e8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927/ArtifactHash": [
+        "/Space-Finder/AssetParameters/c7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameterse8374518abd7a8e0722f182f1f1171b4e36d290818fb55d09b01c7d66ed5d927ArtifactHashE037C307",
+            "data": "AssetParametersc7bb2e1ecf2909a9773a0ee500ee388163d8ed112ec0527bacfa6a11dff9f176ArtifactHash91C33A51",
             "trace": [
               "new FileAssetParameters (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1885,7 +1885,7 @@
             "data": "SpaceUserPool6AB542DC",
             "trace": [
               "new UserPool (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:432:22)",
-              "AuthorizerWrapper.createUserPool (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:26:25)",
+              "AuthorizerWrapper.createUserPool (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:27:25)",
               "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:20:14)",
               "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
               "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
@@ -1915,7 +1915,7 @@
             "trace": [
               "new UserPoolClient (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-cognito/lib/user-pool-client.ts:209:22)",
               "UserPool.addClient (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:320:12)",
-              "AuthorizerWrapper.addUserPoolClient (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:40:45)",
+              "AuthorizerWrapper.addUserPoolClient (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:41:45)",
               "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:21:14)",
               "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
               "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
@@ -1943,7 +1943,7 @@
             "type": "aws:cdk:logicalId",
             "data": "UserPoolId",
             "trace": [
-              "AuthorizerWrapper.createUserPool (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:34:9)",
+              "AuthorizerWrapper.createUserPool (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:35:9)",
               "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:20:14)",
               "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
               "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
@@ -1971,7 +1971,7 @@
             "type": "aws:cdk:logicalId",
             "data": "UserPoolClientId",
             "trace": [
-              "AuthorizerWrapper.addUserPoolClient (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:50:9)",
+              "AuthorizerWrapper.addUserPoolClient (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:51:9)",
               "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:21:14)",
               "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
               "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
@@ -2000,8 +2000,36 @@
             "data": "SpaceUserAuthorizer401AE1AA",
             "trace": [
               "new CognitoUserPoolsAuthorizer (/Users/hillj38/development/cdk-serverless-react/node_modules/@aws-cdk/aws-apigateway/lib/authorizers/cognito.ts:41:22)",
-              "AuthorizerWrapper.createAuthorizer (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:56:27)",
+              "AuthorizerWrapper.createAuthorizer (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:57:27)",
               "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:22:14)",
+              "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
+              "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1311:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/index.ts:1314:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "main (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/Space-Finder/admins": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "admins",
+            "trace": [
+              "AuthorizerWrapper.createAdminsGroup (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:66:9)",
+              "AuthorizerWrapper.initiailize (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:23:14)",
               "new AuthorizerWrapper (/Users/hillj38/development/cdk-serverless-react/infrastructure/auth/AuthorizerWrapper.ts:16:14)",
               "new SpaceStack (/Users/hillj38/development/cdk-serverless-react/infrastructure/SpaceStack.ts:27:27)",
               "Object.<anonymous> (/Users/hillj38/development/cdk-serverless-react/infrastructure/Launcher.ts:6:20)",

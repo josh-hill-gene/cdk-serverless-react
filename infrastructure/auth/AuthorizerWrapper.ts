@@ -1,5 +1,5 @@
 import { CognitoUserPoolsAuthorizer, RestApi } from "@aws-cdk/aws-apigateway";
-import { UserPool, UserPoolClient } from '@aws-cdk/aws-cognito';
+import { UserPool, UserPoolClient, CfnUserPool, CfnUserPoolGroup } from '@aws-cdk/aws-cognito';
 import { CfnOutput, Construct } from "@aws-cdk/core";
 
 export class AuthorizerWrapper {
@@ -20,6 +20,7 @@ export class AuthorizerWrapper {
         this.createUserPool();
         this.addUserPoolClient();
         this.createAuthorizer();
+        this.createAdminsGroup();
     }
 
     private createUserPool() {
@@ -59,5 +60,12 @@ export class AuthorizerWrapper {
             identitySource: 'method.request.header.Authorization',
         });
         this.authorizer._attachToApi(this.api);
+    }
+
+    private createAdminsGroup() {
+        new CfnUserPoolGroup(this.scope, 'admins', {
+            groupName: 'admins',
+            userPoolId: this.userPool.userPoolId,
+        });
     }
 }
