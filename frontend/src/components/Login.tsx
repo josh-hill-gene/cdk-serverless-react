@@ -34,18 +34,28 @@ export class Login extends React.Component<LoginProps, LoginState> {
 
   private async handleSubmit(event: SyntheticEvent) {
     event.preventDefault();
+    this.setState({ loginAttempted: true });
     const result = await this.props.authService.login(
       this.state.userName,
       this.state.password
     );
     if (result) {
-      console.log(result);
+      this.setState({ loginSuccessful: true });
     } else {
-      console.log("Login failed");
+      this.setState({ loginSuccessful: false });
     }
   }
 
   render() {
+    let loginMessage: any;
+    if (this.state.loginAttempted) {
+      if (this.state.loginSuccessful) {
+        loginMessage = <label>Success!!</label>;
+      } else {
+        loginMessage = <label>Failed!!</label>;
+      }
+    }
+
     return (
       <div>
         <h2>Please Login</h2>
@@ -62,6 +72,7 @@ export class Login extends React.Component<LoginProps, LoginState> {
           <br />
           <input type="submit" value="Login" />
         </form>
+        {loginMessage}
       </div>
     );
   }
